@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: 15 23 42;
+  --muted: 100 116 139;
+  --surface: 248 250 252;
+  --accent: 124 58 237;
+  --accent-strong: 139 92 246;
+  --accent-pink: 236 72 153;
+  --grid: 15 23 42;
+}
+
+body {
+  font-family: "Manrope", system-ui, sans-serif;
+  color: rgb(var(--ink));
+  background-color: white;
+}
+
+.bg-subtle-grid {
+  background-image:
+    linear-gradient(to right, rgb(var(--grid) / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(var(--grid) / 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
